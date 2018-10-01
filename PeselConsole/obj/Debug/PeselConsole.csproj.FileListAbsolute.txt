@@ -1,0 +1,7 @@
+C:\Users\n.plachta\Source\Repos\Pesel\PeselConsole\bin\Debug\PeselConsole.exe.config
+C:\Users\n.plachta\Source\Repos\Pesel\PeselConsole\bin\Debug\PeselConsole.exe
+C:\Users\n.plachta\Source\Repos\Pesel\PeselConsole\bin\Debug\PeselConsole.pdb
+C:\Users\n.plachta\Source\Repos\Pesel\PeselConsole\obj\Debug\PeselConsole.csprojAssemblyReference.cache
+C:\Users\n.plachta\Source\Repos\Pesel\PeselConsole\obj\Debug\PeselConsole.csproj.CoreCompileInputs.cache
+C:\Users\n.plachta\Source\Repos\Pesel\PeselConsole\obj\Debug\PeselConsole.exe
+C:\Users\n.plachta\Source\Repos\Pesel\PeselConsole\obj\Debug\PeselConsole.pdb

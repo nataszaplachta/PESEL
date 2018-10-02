@@ -13,11 +13,21 @@ namespace PeselConsole
             Console.WriteLine("Podaj swój numer PESEL:");
             string stringPesel = Console.ReadLine();
 
-            if (stringPesel.Length>11)
+            if (stringPesel.Length>11 || stringPesel.Length<11)
             {
-                throw new ArgumentException("Zbyt długi numer PESEL");
+                throw new ArgumentException("Niepoprawny numer PESEL");
+            }           
+
+            double pesel;
+
+            bool isNum = double.TryParse(stringPesel, out pesel);
+
+            if (isNum == false)
+            {
+                throw new ArgumentException("Pesel może zawierać wyłącznie liczby");
             }
 
+                
             string stringRok = $"{stringPesel[0]}{stringPesel[1]}";
             int intRok = Convert.ToInt32(stringRok);
             string stringMiesiac = $"{stringPesel[2]}{stringPesel[3]}";
@@ -72,9 +82,7 @@ namespace PeselConsole
             double i = Char.GetNumericValue(stringPesel[8]);
             double j = Char.GetNumericValue(stringPesel[9]);
 
-            double numerKontrolny = Char.GetNumericValue(stringPesel[10]);
-
-            Console.WriteLine(numerKontrolny);
+            double numerKontrolny = Char.GetNumericValue(stringPesel[10]);;
 
            double x =  9*a + 7*b + 3*c + 1*d + 9*e + 7*f + 3*g + 1*h + 9*i + 7*j;
 

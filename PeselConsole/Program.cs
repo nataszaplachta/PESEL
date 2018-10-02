@@ -51,10 +51,40 @@ namespace PeselConsole
                 miesiac = intMiesiac - 60;
                 rok = $"22{intRok}";
             }
-            
 
-            string dataUrodzenia = $"Data urodzenia: {intDzien}.{miesiac}.{rok}";
-            Console.WriteLine(dataUrodzenia);
+            string stringPlec = $"{stringPesel[9]}";
+            int intPlec = Convert.ToInt32(stringPlec);
+            string plec = null;
+            if (intPlec % 2 == 0)
+            {
+                plec = "Kobieta";
+            }
+            else plec = "Mężczyzna";
+
+            double a = Char.GetNumericValue(stringPesel[0]);
+            double b = Char.GetNumericValue(stringPesel[1]);
+            double c = Char.GetNumericValue(stringPesel[2]);
+            double d = Char.GetNumericValue(stringPesel[3]);
+            double e = Char.GetNumericValue(stringPesel[4]);
+            double f = Char.GetNumericValue(stringPesel[5]);
+            double g = Char.GetNumericValue(stringPesel[6]);
+            double h = Char.GetNumericValue(stringPesel[7]);
+            double i = Char.GetNumericValue(stringPesel[8]);
+            double j = Char.GetNumericValue(stringPesel[9]);
+
+            double numerKontrolny = Char.GetNumericValue(stringPesel[10]);
+
+            Console.WriteLine(numerKontrolny);
+
+           double x =  9*a + 7*b + 3*c + 1*d + 9*e + 7*f + 3*g + 1*h + 9*i + 7*j;
+
+            if (x%10 != numerKontrolny)
+            {
+                throw new ArgumentException("Pesel niepoprawny");
+            }
+
+            string result = $"Data urodzenia: {intDzien}-{miesiac}-{rok}. Płeć: {plec}";
+            Console.WriteLine(result);
 
 
 

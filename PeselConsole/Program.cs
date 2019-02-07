@@ -15,7 +15,8 @@ namespace PeselConsole
 
             if (stringPesel.Length>11 || stringPesel.Length<11)
             {
-                throw new ArgumentException("Niepoprawny numer PESEL");
+                Console.WriteLine("Pesel niepoprawny");
+                Console.ReadKey();
             }           
 
             double pesel;
@@ -24,10 +25,12 @@ namespace PeselConsole
 
             if (isNum == false)
             {
-                throw new ArgumentException("Pesel może zawierać wyłącznie liczby");
+                Console.WriteLine("Pesel może zawierać wyłącznie liczby");
+                Console.ReadKey();
+
             }
 
-                
+
             string stringRok = $"{stringPesel[0]}{stringPesel[1]}";
             int intRok = Convert.ToInt32(stringRok);
             string stringMiesiac = $"{stringPesel[2]}{stringPesel[3]}";
@@ -86,13 +89,17 @@ namespace PeselConsole
 
            double x =  9*a + 7*b + 3*c + 1*d + 9*e + 7*f + 3*g + 1*h + 9*i + 7*j;
 
-            if (x%10 != numerKontrolny)
+            if (x % 10 != numerKontrolny)
             {
-                throw new ArgumentException("Pesel niepoprawny");
+                Console.WriteLine("Pesel niepoprawny");
+                Console.ReadKey();
             }
-
-            string result = $"Data urodzenia: {intDzien}-{miesiac}-{rok}. Płeć: {plec}";
-            Console.WriteLine(result);
+            else
+            {
+                string result = $"Data urodzenia: {rok}-{miesiac}-{intDzien}. Płeć: {plec}";
+                Console.WriteLine(result);
+                Console.ReadKey();
+            }
 
 
 

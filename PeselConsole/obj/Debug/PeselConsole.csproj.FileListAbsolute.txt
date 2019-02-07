@@ -5,3 +5,10 @@ C:\Users\n.plachta\Source\Repos\Pesel\PeselConsole\obj\Debug\PeselConsole.csproj
 C:\Users\n.plachta\Source\Repos\Pesel\PeselConsole\obj\Debug\PeselConsole.csproj.CoreCompileInputs.cache
 C:\Users\n.plachta\Source\Repos\Pesel\PeselConsole\obj\Debug\PeselConsole.exe
 C:\Users\n.plachta\Source\Repos\Pesel\PeselConsole\obj\Debug\PeselConsole.pdb
+D:\REPOs\pesel\PESEL\PeselConsole\bin\Debug\PeselConsole.exe.config
+D:\REPOs\pesel\PESEL\PeselConsole\bin\Debug\PeselConsole.exe
+D:\REPOs\pesel\PESEL\PeselConsole\bin\Debug\PeselConsole.pdb
+D:\REPOs\pesel\PESEL\PeselConsole\obj\Debug\PeselConsole.csprojAssemblyReference.cache
+D:\REPOs\pesel\PESEL\PeselConsole\obj\Debug\PeselConsole.csproj.CoreCompileInputs.cache
+D:\REPOs\pesel\PESEL\PeselConsole\obj\Debug\PeselConsole.exe
+D:\REPOs\pesel\PESEL\PeselConsole\obj\Debug\PeselConsole.pdb
